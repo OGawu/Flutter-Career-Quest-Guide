@@ -66,8 +66,12 @@ class _QuizState extends State<Quiz> {
       screenWidget = Results(chosenAnswers: selectedAnswers,
       onRestart: restartQuiz,);
     }
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Next Page'), // Title of the AppBar
+          centerTitle: true, // Centers the title
+          backgroundColor: Colors.blue, // Optional: AppBar color
+        ),
         body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -86,7 +90,7 @@ class _QuizState extends State<Quiz> {
 
           screenWidget,
         ),
-      ),
+
     );
   }
 }

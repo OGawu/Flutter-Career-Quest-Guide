@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:testing_app/data/questions.dart';
 import 'package:testing_app/questions_summary.dart';
 class Results extends StatelessWidget {
@@ -44,12 +44,12 @@ class Results extends StatelessWidget {
           children: [
             Text(
               'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
-              //style: const TextStyle(color: Colors.white, fontSize: 25),
-              style: GoogleFonts.lato(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+              style: const TextStyle(color: Colors.white, fontSize: 25),
+              // style: GoogleFonts.lato(
+              //   color: Colors.white,
+              //   fontSize: 20,
+              //   fontWeight: FontWeight.bold,
+              // ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(

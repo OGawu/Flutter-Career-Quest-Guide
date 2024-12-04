@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:testing_app/answer_button.dart';
 import 'package:testing_app/data/questions.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 
 
@@ -42,12 +42,12 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     Text(
     currentQuestion.text,
     textAlign: TextAlign.center,
-    //style: const TextStyle(color: Colors.white),
-    style: GoogleFonts.lato(
-    color: Colors.white,
-    fontSize: 24,
-    fontWeight: FontWeight.bold,
-    ),
+    style: const TextStyle(color: Colors.white),
+    // style: GoogleFonts.lato(
+    // color: Colors.white,
+    // fontSize: 24,
+    // fontWeight: FontWeight.bold,
+    // ),
     ),
     const SizedBox(
     height: 30,

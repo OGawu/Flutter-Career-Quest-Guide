@@ -1,7 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 
 import 'package:testing_app/question_identifier.dart';
+
+
+// class ItemData {
+//   int question_index;
+//   String user_answer;
+//
+//   ItemData({required this.question_index, required this.user_answer})
+// }
+//
+// class SummaryItem extends StatelessWidget {
+//   SummaryItem(this.itemData, {super.key});
+//
+//   // final Map<String, dynamic> itemData;
+//   //ItemData itemData;
+
+  //
+  // @override
+  // Widget build(context) {
+  //   final isCorrectAnswer =
+  //       itemData.user_answer == itemData.user_answer;
 
 class SummaryItem extends StatelessWidget {
   const SummaryItem(this.itemData, {super.key});
@@ -10,8 +30,9 @@ class SummaryItem extends StatelessWidget {
 
   @override
   Widget build(context) {
-    final isCorrectAnswer =
-        itemData['user_answer'] == itemData['correct_answer'];
+    final isCorrectAnswer = itemData['user_answer'] ==
+        itemData['correct_answer'];
+
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -29,11 +50,11 @@ class SummaryItem extends StatelessWidget {
             children: [
               Text(
                 itemData['question'] as String,
-                style: GoogleFonts.lato(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+                // style: GoogleFonts.lato(
+                //   color: Colors.white,
+                //   fontSize: 16,
+                //   fontWeight: FontWeight.bold,
+                // ),
               ),
               const SizedBox(height: 5,),
               Text(
@@ -51,3 +72,4 @@ class SummaryItem extends StatelessWidget {
     );
   }
 }
+

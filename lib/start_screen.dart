@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen( this.startQuiz, {super.key});
@@ -26,18 +27,17 @@ class StartScreen extends StatelessWidget {
         //   //color: Colors.grey,
         // ),
         const SizedBox(
-          height: 15,
+          height: 45,
         ),
-        Text(
+        const Text(
           'In a quest to design your life, open your mind to learning. What you shoot for is convergence where everything about what you are gets to work together for you to realize your potential.',
-          //style: TextStyle(color: Colors.black, fontSize: 35),
-          style: GoogleFonts.lato(
+          style: TextStyle(
             color: Colors.white,
-            fontSize: 15,
-            fontWeight: FontWeight.normal,
+            fontSize: 20,
           ),
         ),
-      const SizedBox(
+
+        const SizedBox(
           height: 15),
         OutlinedButton.icon(onPressed: (){
           startQuiz();
